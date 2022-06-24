@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+
+    </head>
+    <body>
+        <div class="table_container">
+            <h2 class="title">Pixel Art Studio</h2>
+        
+        <i class="material-icons" id="refresh">refresh</i>
+        <div class="app" id="app">
+            <!-- THE PIXEL GRID -->
+            <table id="pixel_canvas"></table>
+
+            <div class="settings" id="settings">
+                
+                <div class="size-settings">
+                    <h3>Grid Size:</h3>
+                    <div class="input_container">
+                    Height:
+                    <input type="number" id="input_height" name="height" min="7" value="10" max="30">
+                    </div>
+                    <div class="input_container">
+                    Width:
+                    <input type="number" id="input_width" name="width" min="7" value="10" max="30">
+                    </div>
+                    <input type="submit" id="submit" value="Save"><br>
+                </div>
+                <div class="color-settings">
+                    <div class="input_container">
+                    <h3>Pixel Color:</h3> 
+                    <input type="color" id="colorPicker">
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+        </div>
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
